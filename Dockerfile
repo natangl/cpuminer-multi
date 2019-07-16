@@ -1,7 +1,5 @@
 FROM debian:jessie
 
-COPY  . /
-
 RUN apt-get update
 RUN apt-get install -y automake 
 RUN apt-get install -y autoconf 
