@@ -1,6 +1,5 @@
+    
 FROM debian:jessie
-
-COPY  . /
 
 RUN apt-get update
 RUN apt-get install -y automake 
@@ -16,4 +15,4 @@ RUN apt-get install -y g++
 
 RUN git clone https://github.com/natangl/cpuminer-multi.git
 
-RUN cd Cpuminer && ./build.sh
+RUN cd cpuminer-multi && ./build.sh
